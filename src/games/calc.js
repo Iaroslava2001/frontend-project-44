@@ -53,5 +53,3 @@ const getQuestionAndAnswer = () => {
   export default () => {
     game(description, getQuestionAndAnswer);
   };
-
-  
