@@ -1,12 +1,7 @@
 import game from '../index.js';
+import randomInteger from '../utils.js';
 
 const description = 'What is the result of the expression?';
-
-//Функция генерирует рандомное число
-function randomInteger(min, max) {
-    let rand = min + Math.random() * (max + 1 - min);
-    return Math.floor(rand);
-  }
  
 //Функция Возвращает случайный оператор из массива ['+', '-', '*'].
 function getRandomOperator() {

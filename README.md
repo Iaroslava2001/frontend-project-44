@@ -29,18 +29,20 @@ brain-prime
 
 ## Asciinema brain-even:
 
+[![asciicast](https://asciinema.org/a/uqwnrrtuBSgT5vgaVsiAa6UcQ.svg)](https://asciinema.org/a/uqwnrrtuBSgT5vgaVsiAa6UcQ)
 
 ## Asciinema brain-calc:
 
-
+[![asciicast](https://asciinema.org/a/Fx1R3mwJtSv2B7WPjF7ha0Cbz.svg)](https://asciinema.org/a/Fx1R3mwJtSv2B7WPjF7ha0Cbz)
 
 ## Asciinema brain-gcd:
 
-
+[![asciicast](https://asciinema.org/a/qbCBL6A9xSVXFVFWoI73amKmZ.svg)](https://asciinema.org/a/qbCBL6A9xSVXFVFWoI73amKmZ)
 
 ## Asciinema brain-progression:
 
-
+[![asciicast](https://asciinema.org/a/Vg0mFWoIbno1cKNelXCwH70gC.svg)](https://asciinema.org/a/Vg0mFWoIbno1cKNelXCwH70gC)
 
 ## Asciinema brain-prime:
 
+[![asciicast](https://asciinema.org/a/x6GJd7B9TjO30YG7MVp6mWwJy.svg)](https://asciinema.org/a/x6GJd7B9TjO30YG7MVp6mWwJy)

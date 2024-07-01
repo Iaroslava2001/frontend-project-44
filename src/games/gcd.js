@@ -1,12 +1,7 @@
 import game from '../index.js';
+import randomInteger from '../utils.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
-
-//Функция генерирует рандомное число
-function randomInteger(min, max) {
-    let rand = min + Math.random() * (max + 1 - min);
-    return Math.floor(rand);
-  }
  
 //Функция нахождения наибольшего общего делителя двух чисел
 function gcd(a, b) {

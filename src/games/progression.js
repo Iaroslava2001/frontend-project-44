@@ -1,13 +1,7 @@
 import game from '../index.js';
+import randomInteger from '../utils.js';
 
 const description = 'What number is missing in the progression?';
-
-//Функция генерирует рандомное число
-function randomInteger(min, max) {
-    let rand = min + Math.random() * (max + 1 - min);
-    return Math.floor(rand);
-  }
- 
 
 // Функция генерирует арифметическую прогрессию
 function generateProgression() {
