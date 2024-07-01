@@ -2,14 +2,13 @@ import game from '../index.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
-/*генерирует рандомное число*/
+//Функция генерирует рандомное число
 function randomInteger(min, max) {
     let rand = min + Math.random() * (max + 1 - min);
     return Math.floor(rand);
   }
  
-
-/*функции нахождения наибольшего общего делителя двух чисел*/
+//Функция нахождения наибольшего общего делителя двух чисел
 function gcd(a, b) {
     while (b !== 0) {
         const temp = b;
@@ -18,7 +17,6 @@ function gcd(a, b) {
     }
     return a;
 }
-
 
 // Функция генерирует вопрос и правильный ответ на него
 function playGcdGame() {
@@ -32,7 +30,7 @@ function playGcdGame() {
     return [question, answer];
 }
 
- 
+
 const getQuestionAndAnswer = () => {
 
       const [question, answer] = playGcdGame();

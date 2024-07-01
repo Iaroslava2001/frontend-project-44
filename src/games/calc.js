@@ -2,22 +2,20 @@ import game from '../index.js';
 
 const description = 'What is the result of the expression?';
 
-/*генерирует рандомное число*/
+//Функция генерирует рандомное число
 function randomInteger(min, max) {
     let rand = min + Math.random() * (max + 1 - min);
     return Math.floor(rand);
   }
  
-
-/*Возвращает случайный оператор из массива ['+', '-', '*']. */
+//Функция Возвращает случайный оператор из массива ['+', '-', '*'].
 function getRandomOperator() {
     const operators = ['+', '-', '*'];
     const randomIndex = randomInteger(0, operators.length - 1);
     return operators[randomIndex];
   }
 
-
-/*Генерирует два случайных числа.Выбирает случайный оператор.Создает строку выражения.Вычисляет результат выражения.
+/*Функция генерирует два случайных числа.Выбирает случайный оператор.Создает строку выражения.Вычисляет результат выражения.
 Возвращает объект с выражением и его результатом. */
 function generateRandomExpression() {
     const num1 = randomInteger(1, 100);

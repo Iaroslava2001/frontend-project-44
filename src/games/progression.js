@@ -1,15 +1,15 @@
 import game from '../index.js';
 
-const description = 'What is the result of the expression?';
+const description = 'What number is missing in the progression?';
 
-/*генерирует рандомное число*/
+//Функция генерирует рандомное число
 function randomInteger(min, max) {
     let rand = min + Math.random() * (max + 1 - min);
     return Math.floor(rand);
   }
  
 
-// Функция для генерации арифметической прогрессии
+// Функция генерирует арифметическую прогрессию
 function generateProgression() {
     const length = randomInteger(5, 10); // случайная длина прогрессии от 5 до 10
     const start = randomInteger(1, 20); // случайное начальное число от 1 до 20
@@ -20,11 +20,11 @@ function generateProgression() {
       progression.push(start + i * step);
     }
 
-    // Выбираем случайную позицию для скрытия числа
+    // Выбирает случайную позицию для скрытия числа
     const hiddenIndex = randomInteger(0, length - 1);
     const answer = progression[hiddenIndex];
   
-    // Заменяем скрытое число двумя точками в прогрессии для вопроса
+    // Заменяет скрытое число двумя точками в прогрессии для вопроса
     progression[hiddenIndex] = '..';
   
     // Вопрос для пользователя
