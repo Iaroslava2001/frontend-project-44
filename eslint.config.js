@@ -4,8 +4,8 @@ import pluginJs from "@eslint/js";
 
 export default [
   {
-    languageOptions: { 
-      globals: globals.browser 
+    languageOptions: {
+      globals: globals.browser
     },
     rules: {
       "no-console": "off",
