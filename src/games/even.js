@@ -9,10 +9,9 @@ const getQuestionAndAnswer = () => {
   const question = randomInteger(1, 9);
   const currecAnswer = isEven(question) ? 'yes' : 'no';
 
-    return [question, currecAnswer];
+  return [question, currecAnswer];
 };
 
 export default () => {
   game(description, getQuestionAndAnswer);
 };
-
