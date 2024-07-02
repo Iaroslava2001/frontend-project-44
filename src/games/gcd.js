@@ -1,5 +1,5 @@
-import game from '../index.js';
-import randomInteger from '../utils.js';
+import getGameLaunch from '../index.js';
+import getRandomInteger from '../utils.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
@@ -15,8 +15,8 @@ const getGcd = (numOne, numTwo) => {
 
 // Функция генерирует вопрос и правильный ответ на него
 function playGcdGame() {
-  const num1 = randomInteger(1, 100);
-  const num2 = randomInteger(1, 100);
+  const num1 = getRandomInteger(1, 100);
+  const num2 = getRandomInteger(1, 100);
   const question = `${num1} ${num2}`;
 
   const answer = getGcd(num1, num2);
@@ -32,5 +32,5 @@ const getQuestionAndAnswer = () => {
 };
 
 export default () => {
-  game(description, getQuestionAndAnswer);
+  getGameLaunch(description, getQuestionAndAnswer);
 };

@@ -1,20 +1,19 @@
-import game from '../index.js';
-import randomInteger from '../utils.js';
+import getGameLaunch from '../index.js';
+import getRandomInteger from '../utils.js';
 
 const description = 'What is the result of the expression?';
 
 // Функция возвращает случайный оператор из массива ['+', '-', '*'].
 function getRandomOperator() {
   const operators = ['+', '-', '*'];
-  const randomIndex = randomInteger(0, operators.length - 1);
+  const randomIndex = getRandomInteger(0, operators.length - 1);
   return operators[randomIndex];
 }
 
 // Функция возвращает объект с выражением и его результатом. */
-
 function generateRandomExpression() {
-  const num1 = randomInteger(1, 100);
-  const num2 = randomInteger(1, 100);
+  const num1 = getRandomInteger(1, 100);
+  const num2 = getRandomInteger(1, 100);
   const operator = getRandomOperator();
 
   const question = `${num1} ${operator} ${num2}`;
@@ -44,5 +43,5 @@ const getQuestionAndAnswer = () => {
 };
 
 export default () => {
-  game(description, getQuestionAndAnswer);
+  getGameLaunch(description, getQuestionAndAnswer);
 };
