@@ -4,7 +4,7 @@ import randomInteger from '../utils.js';
 const description = 'Find the greatest common divisor of given numbers.';
 
 // Функция нахождения наибольшего общего делителя двух чисел
-const gcd = (numOne, numTwo) => {
+const getGcd = (numOne, numTwo) => {
   let gcd = 1;
   for (let i = 2; i <= numOne; i += 1) {
     if (numOne % i === 0 && numTwo % i === 0) {
@@ -19,7 +19,7 @@ function playGcdGame() {
   const num2 = randomInteger(1, 100);
   const question = `${num1} ${num2}`;
 
-  const answer = gcd(num1, num2);
+  const answer = getGcd(num1, num2);
 
   return [question, answer];
 }

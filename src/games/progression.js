@@ -10,7 +10,7 @@ function generateProgression() {
   const step = randomInteger(1, 5); // случайный шаг прогрессии от 1 до 5
 
   const progression = [];
-  for (let i = 0; i < length; i = i + 1) {
+  for (let i = 0; i < length; i += 1) {
     progression.push(start + i * step);
   }
 

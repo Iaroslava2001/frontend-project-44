@@ -11,7 +11,7 @@ export default (description, getQuestionAndAnswer) => {
 
   console.log(description);
 
-  for (let i = 0; i < countRound; i = i + 1) {
+  for (let i = 0; i < countRound; i += 1) {
     const [question, currecAnswer] = getQuestionAndAnswer();
 
     console.log(`Question: ${question}`);
