@@ -12,18 +12,16 @@ export default (description, getQuestionAndAnswer) => {
   console.log(description);
 
   for (let i = 0; i < countRound; i += 1) {
-    const [question, currecAnswer] = getQuestionAndAnswer();
-
+    const [question, correctAnswer] = getQuestionAndAnswer();
     console.log(`Question: ${question}`);
 
     const answer = readlineSync.question('Your answer: ');
-    if (answer === currecAnswer) {
-      console.log('Correct!');
-    } else {
-      console.log(`${answer} is wrong answer ;(. Correct answer was ${currecAnswer}.`);
+    if (answer !== correctAnswer) {
+      console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
       console.log(`Let's try again, ${name}!`);
       return;
     }
+      console.log('Correct!');
   }
 
   console.log(`Congratulations, ${name}!`);
